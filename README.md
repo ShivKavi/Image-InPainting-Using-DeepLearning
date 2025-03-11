@@ -1,10 +1,18 @@
 # Image-InPainting-Using-DeepLearning
 Image Inpainting using GMCNN | Deep learning-based image restoration system that fills missing or damaged regions in images with high realism and structural consistency. Built with PyTorch.
 
-# Contributions
-Mokesh Prathaban - Model architecture design and implementation
-Rushitha Alva - Dataset preprocessing and augmentation and Training and hyperparameter tuning
-Vijay kumar Reddy Marripati - Performance evaluation and benchmarking
+## Contributions
+
+- **Mokesh Prathaban**  
+  Model architecture design and implementation.
+
+- **Rushitha Alva**  
+  Dataset preprocessing, augmentation, training, and hyperparameter tuning.
+
+- **Vijay Kumar Reddy Marripati**  
+  Performance evaluation and benchmarking.
+ 
+
 
 # Motivation
 Traditional inpainting techniques, such as patch-based methods, struggle with large missing areas and complex textures. Deep learning-based approaches, including GANs (Generative Adversarial Networks) and Diffusion Models, have shown superior performance in generating realistic image completions.
@@ -20,11 +28,17 @@ PatchGAN Discriminator: Ensures realistic local texture generation.
 Advanced Loss Functions: Combines L1 loss, adversarial loss, and perceptual loss for improved quality.
 
 # Key Features
-##Deep learning-based image inpainting for high-quality restoration.
-##GAN-based models to enhance texture and structural consistency.
-##Loss function optimization for sharp and realistic results.
-##Multi-dataset training to improve generalization across diverse images.
-##Benchmarking against state-of-the-art models for performance evaluation.
+##Multi-column encoder for capturing fine-grained and global features.
+
+##PatchGAN and GMCNN discriminator for improving local texture realism.
+
+##Loss functions: L1 Loss, Adversarial Loss, and Perceptual Loss (LPIPS).
+
+##Evaluation metrics: PSNR (Peak Signal-to-Noise Ratio) and SSIM (Structural Similarity Index).
+
+##Trained on the Places2 dataset (10,000 images, 256x256 resolution).
+
+##Optimized for GPU training with Automatic Mixed Precision (AMP).
 
 # Technologies Used
 Deep Learning Frameworks: PyTorch, TensorFlow, Keras
