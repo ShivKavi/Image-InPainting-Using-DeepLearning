@@ -1,0 +1,10 @@
+torch==2.0.1+cu118          # PyTorch with CUDA 11.8
+torchvision==0.15.2+cu118   # TorchVision (same CUDA version)
+torchaudio==2.0.2+cu118     # Optional (remove if not needed)
+matplotlib==3.7.1           # Visualization
+numpy==1.23.5               # Numerical computations
+opencv-python==4.7.0.72     # For image processing (masking, reading images)
+tqdm==4.65.0                # Progress bars
+lpips==0.1.4                # Perceptual Loss (LPIPS)
+scikit-image==0.20.0        # PSNR and SSIM metrics
+
