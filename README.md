@@ -51,6 +51,14 @@ pip install -r requirements.txt
 3️) Run the Jupyter Notebook
 jupyter notebook InPaintFP.ipynb
 
+## Usage
+
+### Running the Model on a Custom Image
+
+1. **Upload your custom masked image**
+2. It will automatically load the GMCNN MODEL with epoch 100 and produce output.
+
+
 ## Evaluation Metrics
 
 To assess the performance of the inpainting model, we use the following metrics:
