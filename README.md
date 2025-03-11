@@ -16,7 +16,7 @@ Image Inpainting using GMCNN | Deep learning-based image restoration system that
 ## Motivation
 Traditional inpainting techniques, such as patch-based methods, struggle with large missing areas and complex textures. Deep learning-based approaches, including GANs (Generative Adversarial Networks) and Diffusion Models, have shown superior performance in generating realistic image completions.
 
-#Challenges in traditional methods:
+## Challenges in traditional methods:
 Inability to handle large missing regions – Results in artifacts and unrealistic blending.
 Lack of structural consistency – Fails to preserve edges and object shapes.
 High computational cost – Training large generative models requires significant resources.
@@ -65,5 +65,6 @@ Kindly check the Results folder for the screenshots of the results
 - Pathak, D., et al. (2016). "Context Encoders: Feature Learning by Inpainting." CVPR.  
 - Yu, J., et al. (2019). "Free-Form Image Inpainting with Gated Convolution." ICCV.  
 - Iizuka, S., et al. (2017). "Globally and Locally Consistent Image Completion." SIGGRAPH.  
-- Liu, G., et al. (2018). "Image Inpainting for Irregular Holes Using Partial Convolutions." ECCV.
+- Liu, G., et al. (2018). "Image Inpainting for Irregular Holes Using Partial Convolutions." ECCV
+
 
