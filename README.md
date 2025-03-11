@@ -11,7 +11,6 @@ Image Inpainting using GMCNN | Deep learning-based image restoration system that
 
 - **Vijay Kumar Reddy Marripati**  
   Performance evaluation and benchmarking.
- 
 
 
 ## Motivation
@@ -44,7 +43,7 @@ Training Environment: Google Colab Pro (NVIDIA A100 GPU)
 ## Installation & Setup
 
 1️) Clone the Repository
-git clone https://github.com/your-username/Image-Inpainting.git
+https://github.com/ShivKavi/Image-InPainting-Using-DeepLearning.git
 
 2️) Install Dependencies
 pip install -r requirements.txt
