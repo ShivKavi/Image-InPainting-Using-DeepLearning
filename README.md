@@ -64,7 +64,33 @@ jupyter notebook InPaintFP.ipynb
 To assess the performance of the inpainting model, we use the following metrics:
 - Peak Signal-to-Noise Ratio (PSNR): Measures image reconstruction quality.
 - Structural Similarity Index (SSIM): Evaluates structural fidelity.
-- Inference Speed: Assesses real-time feasibility.
+- LPIPS (Learned Perceptual Image Patch Similarity) Measures **perceptual similarity** 
+
+##  Trustworthiness Metric: Adversarial Robustness Evaluation
+
+To evaluate the **robustness** and **trustworthiness** of the inpainting model, we use an **attack-and-analysis approach**. Specifically, we test how the model behaves when **minor perturbations** are introduced to the masked inputs.
+
+###  Adversarial Attacks Used
+
+- **FGSM (Fast Gradient Sign Method)**  
+  Adds a small, one-step perturbation to the input in the direction that maximizes the model’s loss.  
+  Evaluates the model’s sensitivity to small, high-impact noise.
+
+- **PGD (Projected Gradient Descent)**  
+  A stronger, multi-step iterative attack that simulates more effective adversarial corruption.  
+  Useful for measuring worst-case degradation in inpainting quality.
+
+### Trustworthiness Evaluation Strategy
+
+- Apply FGSM and PGD attacks to masked inputs.
+- Generate inpainted outputs under both clean and adversarial conditions.
+- Measure **degradation in PSNR, SSIM, and LPIPS** between clean and attacked outputs.
+
+###  Insights Captured
+
+- Helps identify how **sensitive** the model is to input manipulation.
+- Reveals if the model maintains **semantic coherence** under uncertainty.
+- Supports development of **robust, trustworthy image completion systems**.
 
 ## Results
 Kindly check the Results folder for the screenshots of the results
@@ -74,5 +100,6 @@ Kindly check the Results folder for the screenshots of the results
 - Yu, J., et al. (2019). "Free-Form Image Inpainting with Gated Convolution." ICCV.  
 - Iizuka, S., et al. (2017). "Globally and Locally Consistent Image Completion." SIGGRAPH.  
 - Liu, G., et al. (2018). "Image Inpainting for Irregular Holes Using Partial Convolutions." ECCV
+
 
 
